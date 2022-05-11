@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Swapping of Numbers</title>
+    </heaad>
+    <body>
+        <h5>Swapping of Numbers</h5>
+        <div>Before Swapping</div>
+        <div>First number A=3</div>
+        <div>Second number B=5</div><br/>
+        <div>After Swapping:</div>
+        <div>A=<span id="swap1"></span></div>
+        <div>B=<span id="swap2"></span></div>
+
+    </body>
+</html>
+<script>
+        var a=3;
+        var b=5;
+        var t=Number(a);
+        a=Number(b);
+        b=Number(t);
+        document.getElementById("swap1").innerHTML=a;
+        document.getElementById("swap2").innerHTML=b;
+
+    
+</script>    

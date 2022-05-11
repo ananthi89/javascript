@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        Enter first number<input type="text" id="one"/><br/>
+        Enter second number<input type="text" id="two"/><br/>
+        <button onClick="addition()">Add</button>
+        <button onClick="subtraction()">Sub</button>
+        <button onClick="multiplication()">Mul</button>
+        <button onClick="divison()">Div</button>
+        
+
+        <div>Sum:<span id="add"></span></div>
+        <div>Difference:<span id="sub"></span></div>
+        <div>Product:<span id="mul"></span></div>
+        <div>Result:<span id="div"></span></div>
+
+    </body>
+    <script>
+        function addition()
+        {
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = Number(a)+Number(b);
+            document.getElementById("add").innerHTML = result;
+        }
+        console.log("1"+"2");
+    </script>
+    <script>
+        function subtraction()
+        {
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = Number(a)-Number(b);
+            document.getElementById("sub").innerHTML = result;
+        }
+        console.log("1"+"2");
+    </script>
+    <script>
+        function multiplication()
+        {
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = Number(a)*Number(b);
+            document.getElementById("mul").innerHTML = result;
+        }
+        console.log("1"+"2");
+    </script>
+    <script>
+        function divison()
+        {
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = Number(a)/Number(b);
+            document.getElementById("div").innerHTML = result;
+        }
+        console.log("1"+"2");
+    </script>
+
+    
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Largest Among three numbers</title>
+    </head>
+    <body>
+        <h5>To Find Largest among Three Numbers</h5>
+        <div>Enter First Number: <input type="text" id="num1"></div>
+        <div>Enter Second Number: <input type="text" id="num2"></div>
+        <div>Enter Third Number:  <input type="text" id="num3"></div>
+        <button onclick="largest()">largest</button>
+        <div>Largest Number:<span id="large"></span></div>
+    </body>
+
+<script>
+        function largest()
+        {
+       var n1,n2,n3;
+       n1=document.getElementById("num1").value;
+       n2=document.getElementById("num2").value;
+       n3=document.getElementById("num3").value;
+       n1=Number(n1);
+       n2 = Number(n2);
+       n3 = Number(n3);
+      if((n1 > n2) && (n1 > n3))
+      {
+         document.getElementById("large").innerHTML=n1;
+        
+      }
+      else if(n2 > n3)
+      {
+      document.getElementById("large").innerHTML=n2;
+      }
+      else 
+      {
+      document.getElementById("large").innerHTML=n3;
+      }
+      }
+</script>
+</html>

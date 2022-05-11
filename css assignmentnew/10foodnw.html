@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Food list</title>
+    </head>
+    <body>
+        <style>
+            .gridcontainer{
+                            
+                display: grid;
+                grid-template-columns: auto auto;
+                border-radius:33px;
+                background-color: rgb(253,248,248);
+                width: 1500px;
+                height: 800px; 
+                border:1px solid black;
+                border-left:10px solid rgb(2,6,2);
+                border-right:25px solid black;
+                border-top:4px solid black;
+                border-bottom:4px solid black;
+                padding-top:100px;                               
+            }
+            .product
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 300px;
+                height: 80px;
+                border-bottom:1px solid rgb(155, 155, 151);                
+            }
+            .product1{
+                text-align: right;                                
+                width: 300px;
+                height: 80px;
+                border-bottom:1px solid rgb(155, 155, 151);                              
+            }
+            li{
+                list-style: none;
+            }
+            .quantity{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                border-radius: 15px;
+                text-align: center;
+                margin-left: 200;
+                background-color: rgb(192, 47, 47); 
+            }   
+            .amount{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .name{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large; 
+            }
+            .variety{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: medium; 
+                font-style: italic;
+            }
+            .price{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large; 
+                color: red;                
+            }
+            input{
+                width: 10%;               
+            }  
+            @media screen and (min-width:48px) {
+            .gridcontainer{
+                display: grid;
+                grid-template-columns: auto;
+                }
+            }
+             @media screen and (min-width:768px) {
+                .gridcontainer{
+                display: grid;
+                grid-template-columns: auto auto;
+                }
+            }
+            @media screen and (min-width:992px) {
+            .gridcontainer{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                }
+            }            
+        </style>
+       <div class="gridcontainer">
+       <div class="product">
+        <ul>
+            <li class="name">Sushi</li>
+            <li class="variety">Finest fish and veggies</li>
+            <li class="price">$22.99</li>
+        </ul>
+        </div>
+        <div class="product1">
+            <div class="amount"><p>Amount <input type="number"></p></div>
+            <div class="quantity"><p>+Add</p></div>
+        </div>
+        <div class="product">
+        <ul>
+            <li class="name">Schnitzel</li>
+            <li class="variety">A German speciality</li>
+            <li class="price">$16.50</li>
+       </ul>
+        </div>
+        <div class="product1">
+            <div class="amount"><p>Amount <input type="number"></p></div>
+            <div class="quantity"><p>+Add</p></div>
+        </div>
+        <div class="product">
+        <ul>
+            <li class="name">Barbecue Burger</li>
+            <li class="variety">American, raw, meaty</li>
+            <li class="price">$12.99</li>
+        </ul>
+        </div>
+        <div class="product1">
+            <div class="amount"><p>Amount <input type="number"></p></div>
+            <div class="quantity"><p>+Add</p></div>
+        </div>
+        <div class="product">
+        <ul>
+            <li class="name">Green Bowl</li>
+            <li class="variety">Healthy...and green...</li>
+            <li class="price">$18.99</li>
+        </ul>
+        </div>
+        <div class="product1">
+            <div class="amount"><p>Amount <input type="number"></p></div>
+            <div class="quantity"><p>+Add</p></div>    
+        </div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Average of Scores</title>
+    </heaad>
+    <body>
+        <div>Who is the Winner!</div>
+        <div>Scores of Salman s1=89,s2=120,s3=103</div>
+        <div>Scores of mike m1=116,m2=94,m3=123</div><br/>
+        <div>Scores of Mary a1=97,a2=134,a3=105</div>
+        <div>Salman's average=<span id="salmanavg"></span></div>
+        <div>Mike's average=<span id="mikeavg"></span></div>
+        <div>Mary's average=<span id="maryavg"></span></div>
+        <div id="avg"></div>
+
+    </body>
+</html>
+<script>
+        var s1=89,s2=120,s3=103;
+        var m1=116,m2=94,m3=123;
+        var s4=50,s5=90,s6=45;
+        var m4=45,m5=90,m6=50;
+        var m1=Number(m1);
+        var m2=Number(m2);
+        var m3=Number(m3);
+        var s1=Number(s1);
+        var s2=Number(s2);
+        var s3=Number(s3);
+        var a1=Number(a1);
+        var a2=Number(a2);
+        var a3=Number(a3);
+        var m4=Number(m4);
+        var m5=Number(m5);
+        var m5=Number(m6);
+        var s4=Number(s4);
+        var s5=Number(s5);
+        var s6=Number(s6);
+        var mikeavg=((m1+m2+m3)/3);
+        var salmanavg=((s1+s2+s3)/3);
+        var maryavg=((a1+a2+a3)/3);
+        mikeavg=Number(mikeavg);
+        salmanavg=Number(salmanavg);    
+        maryavg=Number(maryavg);      
+        document.getElementById("mikeavg").innerHTML=mikeavg;
+        document.getElementById("salmanavg").innerHTML=salmanavg;
+        document.getElementById("maryavg").innerHTML=maryavg;
+        avg(s1,s2,s3);
+        avg(m1,m2,m3);
+        avg(s4,s5,s6);
+        avg(m4,m5,m6);
+        avg(a1,a2,a3);
+        winner();
+        function avg(a,b,c)
+        {
+           var average=(a+b+c)/3;
+           document.getElementById("avg").innerHTML = average;
+        }
+        function winner() 
+        {
+        if((salmanavg > mikeavg) &&(salmanavg > maryavg))
+        console.log("Salman's Team is the winner",salmanavg);
+        else if((mikeavg > salmanavg) && (mikeavg > maryavg))
+        console.log("Mike's Team is the winner",mikeavg);
+        else if((maryavg > salmanavg) && (maryavg > mikeavg))
+        console.log("Mary's Team is the winner",maryavg);
+        else
+        console.log("The match is draw",mikeavg);
+        }
+        
+        
+</script>    

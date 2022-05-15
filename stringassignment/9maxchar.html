@@ -1,0 +1,43 @@
+<<html>
+    <head>
+        <title>Find Highest number of characters</title>
+    </head>
+    <body>
+        <h1>Find Highest number of characters</h1>
+        <table>
+            <tr>
+                <td>Enter the sentence :</td>
+                <td><input type="text" id="any_str"></td>
+                <td><button onclick="high_chars()">Find Highest character</button></td>                
+            </tr>
+            <tr>
+                <td>Highest number of characters in the sentence :</td>
+                <td><span id="result"></span></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<script>
+    function high_chars() 
+    {    
+    var str = document.getElementById("any_str").value;
+    var count={};
+    var high_count='';
+   console.log(str);
+    for(var i=0;i<str.length;i++)
+    {
+        var value=str[i];
+        if(!count[value])
+        {
+            count[value]=0;
+        }
+        count[value]++;
+        if(high_count=='' || count[value] > count[high_count])
+        {
+            high_count=value;
+        }
+    }
+    document.getElementById("result").innerHTML=high_count;
+    console.log(high_count +":"+ count[high_count]);    
+    } 
+</script>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Reverse the words</title>
+    </head>
+    <body>
+        <h1>Reverse the words</h1>
+        <table>
+            <tr>
+                <td>Enter the sentence :</td>
+                <td><input type="text" id="any_str"></td>
+                <td><button onclick="str_rev()">convert into reverse</button></td>                
+            </tr>
+            <tr>
+                <td>Reverse the words in sentence </td>
+                <td><span id="reverse_word"></span></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<script>
+    function str_rev() 
+    {    
+    var str = document.getElementById("any_str").value;
+    
+    //convert string into array
+    var spl = str.split(' ');
+    console.log(spl);
+////convert string into reverse
+    var text="";
+    for(var i=0;i<spl.length;i++)
+    {
+        text+=spl[i].split("").reverse().join("")+" ";
+    }
+    document.getElementById("reverse_word").innerHTML=text;
+    console.log(text);
+    } 
+</script>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Anagram</title>
+    </head>
+    <body>
+        <div>First String<input type="text" id="str1"></div><br/>
+        <div>Second String<input type="text" id="str2"></div><br/>
+        <button onclick="anagramcheck()">Anagram</button>
+
+    </body>
+<script>
+function anagramcheck()
+{
+    var str1=document.getElementById("str1").value;
+    var str2=document.getElementById("str2").value;
+    var lenga=str1.length;
+    var lengb=str2.length;
+    if(lenga!=lengb)
+    {
+    console.log("Invalid string");
+    alert("Different string");
+    }
+    var sortedstr1=str1.split("").sort().join("");
+    var sortedstr2=str2.split("").sort().join("");
+    console.log("first string="+str1,"Second string="+str2);
+    console.log("Sorted first string="+sortedstr1,"Sorted second string="+sortedstr2);
+    if(sortedstr1===sortedstr2)
+    {
+        alert("These strings are Anagrams");
+        console.log("These strings are Anagrams");
+    }
+    else
+    {
+        alert("These strings are not Anagrams");
+        console.log("These strings are not Anagrams");
+
+    }
+
+}    
+</script>
+    </html>

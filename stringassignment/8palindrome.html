@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>palindrome</title>
+    </head>
+    <body>
+        <div><input type="text" id="str1"></div><br/>
+        <button onclick="palin()">Palindrome</button>
+    </body>
+    <script>
+    function palin()
+    {
+       var str=document.getElementById("str1").value;
+       var rev=str.split("").reverse().join("");
+       if(str===rev)
+            console.log("This string is a Palindrome")
+        else
+            console.log("This string is not a Palindrome")
+    }
+        
+    </script>

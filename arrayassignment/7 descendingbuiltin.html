@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Print array in Descending order using built in function</title>
+    </head>
+    <body>
+        <h1>Print array in Descending order using built in function</h1>
+        <div>Input : [<span id="input"></span>]</div>
+        <div>Output : [<span id="print"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[33,44,11,33,44,555,11,11,45];
+    document.getElementById("input").innerHTML=ary;
+
+
+    //print array data in descending order
+    var data = ary.sort();
+    var desc =data.reverse();
+    console.log(desc);
+    document.getElementById("print").innerHTML=desc;
+</script>

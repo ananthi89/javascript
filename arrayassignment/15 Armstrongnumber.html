@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Armstrong number in given array </title>
+    </head>
+    <body>
+        <h1>Armstrong number in given array </h1>
+        <div>Input : [<span id="input"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[221,453,153,3434,1634];
+    temp=parseInt(ary);
+    document.getElementById("input").innerHTML=ary;
+   
+    //Armstrong number in given array      
+    for(var i=0;i<ary.length;i++)
+    {
+            var sum=0;
+            var rem=0;
+            var temp=ary[i];
+            
+            while(temp>0)
+            {
+                temp=parseInt(temp);
+                sum=parseInt(sum);
+                rem=parseInt(rem);
+                
+                rem=temp%10;
+                sum=sum+(rem*rem*rem);
+                temp=temp/10;                   
+            }
+            if(ary[i]===sum)
+                console.log(sum+"Armstrong Number");
+            else
+                console.log("Not armstrong");
+
+    }
+        
+</script>

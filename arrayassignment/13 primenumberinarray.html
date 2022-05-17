@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Prime number in array</title>
+    </head>
+    <body>
+        <h1>Find Prime number in array</h1>
+        <div>Input : [<span id="input"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[2,3,4,5,6,7,8,9,11];
+    document.getElementById("input").innerHTML=ary;
+   
+    //Prime number in array        
+    for(var i=0;i<ary.length;i++)
+    {
+        var flag=true; 
+        for(var j=2;j*j<=ary[i];j++)
+            if(ary[i]%j==0)
+                flag= false;    
+            if (flag===true)
+                var result=ary[i];
+        console.log(result);                                        
+    }             
+</script>

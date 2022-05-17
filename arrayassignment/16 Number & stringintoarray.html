@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Convert Number & String into array</title>
+    </head>
+    <body>
+        <h1>Convert Number & String into array</h1>
+        <div>Input : String <span id="s_input"></span></div>
+        <div>Input : Number <span id="n_input"></span></div>
+        <div>Output : String [<span id="s_output"></span>]</div>
+        <div>Output : Number [<span id="n_output"></span>]</div>
+    </body>
+</html>
+<script>
+    var str="salman";
+    var numb="34531";
+    document.getElementById("s_input").innerHTML=str;
+    document.getElementById("n_input").innerHTML=numb;
+   
+    //Number & String into array using split()  
+    var str_ary;
+    var numb_ary; 
+    numb_ary=Number(numb_ary);     
+    str_ary=str.split("");
+    numb_ary=numb.split("");
+    console.log(str_ary);
+    console.log(numb_ary);
+    document.getElementById("s_output").innerHTML=str_ary;
+    document.getElementById("n_output").innerHTML=numb_ary;
+                 
+</script>

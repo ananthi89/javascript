@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Print array using "for of" loop</title>
+    </head>
+    <body>
+        <h1>Print array using 'for of' loop</h1>
+        [<span id="print"></span>]
+
+    </body>
+</html>
+<script>
+    var ary=[33,44,11,33,44,555,11,11,45];
+    //print array data using for loop
+    var data="";
+    for (var i of ary)
+    {
+        data +=i + " "+",";
+    }
+    console.log(data);
+    document.getElementById("print").innerHTML=data;
+</script>

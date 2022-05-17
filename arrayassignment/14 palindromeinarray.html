@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Palindrome number in array</title>
+    </head>
+    <body>
+        <h1>Palindrome number in array</h1>
+        <div>Input : [<span id="input"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=["22","3","4","21","45","77","34"];
+    document.getElementById("input").innerHTML=ary;
+   
+    //Palindrome number in array
+    var rev;        
+    for(var i=0;i<ary.length;i++)
+    {
+        var temp=ary[i];       
+        rev=temp.split("").reverse().join("");   
+           
+        if(temp===rev)
+            console.log(temp);                                        
+    }             
+</script>

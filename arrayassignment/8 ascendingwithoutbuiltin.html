@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Ascending order without using built in function</title>
+    </head>
+    <body>
+        <h1>Ascending order using built in function</h1>
+        <div>Input : [<span id="input"></span>]</div>
+        <div>Output : [<span id="print"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[33,44,11,33,44,555,11,11,45];
+    document.getElementById("input").innerHTML=ary;
+    //print array data in ascending order
+    //var data = ary.sort();
+    for(var i=0;i<ary.length;i++)
+    {
+        for(var j=i+1;j<ary.length;j++)
+        {
+            if(ary[i]>ary[j])
+            {
+                var temp=ary[i];
+                ary[i]=ary[j];
+                ary[j]=temp;
+            }
+        }
+    }    
+    console.log(ary);
+    document.getElementById("print").innerHTML=ary;
+</script>

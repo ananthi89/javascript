@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Sum of array</title>
+    </head>
+    <body>
+        <h1>Sum of array</h1>
+        <div>Input : [<span id="input"></span>]</div>
+        <div>Output : [<span id="print"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[33,44,20,11];
+    document.getElementById("input").innerHTML=ary;
+
+    //print Sum of array data 
+    var total=0;    
+    for(var i=0;i<ary.length;i++)
+    {
+        total=total+ary[i];
+    }    
+    console.log(total);
+    document.getElementById("print").innerHTML=total;
+</script>

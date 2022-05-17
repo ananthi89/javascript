@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Chunks of two</title>
+    </head>
+    <body>
+        <h1>Chunks of two</h1>
+        <div>Input : [<span id="input"></span>]</div>
+    </body>
+</html>
+<script>
+    var ary=[33,44,20,11];
+    document.getElementById("input").innerHTML=ary;
+
+    //print chunks of two 
+    var chunks=2;    
+    for(var i=0;i<ary.length;i+=chunks)
+    {
+        var temp=ary.slice(i,i+chunks);
+        console.log(temp);
+    }        
+</script>

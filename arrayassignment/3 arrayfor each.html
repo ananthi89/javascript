@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Print array using "for each" loop</title>
+    </head>
+    <body>
+        <h1>Print array using 'for each' loop</h1>
+        [<span id="print"></span>]
+
+    </body>
+</html>
+<script>
+    var ary=[33,44,11,33,44,555,11,11,45];
+    //print array data using for loop-1st method
+    var data="";
+    ary.forEach(function(data){
+    console.log(data);
+    })
+
+    //print array data using for loop-2nd method
+    ary.forEach(print_ary);
+    document.getElementById("print").innerHTML=data;
+
+    function print_ary(value,index,array)
+    {
+        data +=value +" ";
+
+    }
+</script>

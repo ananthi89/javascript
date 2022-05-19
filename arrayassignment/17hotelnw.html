@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Bill calculation</title>
+    </head>
+    <body>
+        <h1>Bill calculation</h1>
+        <div>Input : Bill Amount [<span id="input"></span>]</div>
+        <div>Output : Amount paid with tips [<span id="output"></span>]</div>
+        <button onclick="billcalc()">bill</button>
+        
+    </body>
+</html>
+<script>
+    function billcalc()
+    {
+    var bill=[124,48,268];
+    document.getElementById("input").innerHTML=bill;
+    bill=Number(bill);
+    var paid;
+    paid=Number(paid); 
+    
+    
+    for (var i=0;i<bill.length;i++)
+    {
+       
+        if (bill[i]<50)
+        {
+            paid=bill[i]*0.2;
+            paid=Number(paid);   
+            console.log(paid);
+            document.getElementById("output").innerHTML=paid;
+        }
+        else if ((bill[i]>50) || (bill[i]<200))
+        {
+            paid=bill[i]*0.15;
+            paid=Number(paid);   
+            console.log(paid);
+            document.getElementById("output").innerHTML=paid;
+        }
+        else if (bill[i]>200)
+        {
+            paid=bill[i]*0.1;
+            paid=Number(paid);   
+            console.log(paid);
+            document.getElementById("output").innerHTML=paid;
+        }
+        else 
+        console.log("Invalid data");
+        
+        
+    }
+    console.log(bill);
+    document.getElementById("output").innerHTML=paid;
+}
+    
+
+</script>
